@@ -4,10 +4,10 @@ python:
   - "3.6"
 
 install:
-  - pip install codecov
+  - pip install pytest pytest-cov
 
 script:
-  - python -m unittest discover
+  - pytest --cov=./ test_hello.py
 
 after_success:
   - codecov
