@@ -1,5 +1,7 @@
+import sys
 import unittest
 
+sys.path.append('.')  # for units tests
 from app.hello import hello
 
 
