@@ -1,10 +1,10 @@
 language: python
 
 python:
-  - "3.7"
+  - "3.6"
 
 install:
-  - pip install codecov pytest pytest-cov
+  - pip install pytest pytest-cov==2.6.1 codecov
 
 script:
   - pytest --cov=./src/hello tests/
